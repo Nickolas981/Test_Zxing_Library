@@ -27,10 +27,10 @@ public class SampleActivity extends FragmentActivity {
         FragmentManager fm = getSupportFragmentManager();
         mScannerFragment = (BarCodeScannerFragment) fm.findFragmentById(R.id.scanner_fragment);
 
-        mToggleButton = (Button) findViewById(R.id.button_flash);
+        mToggleButton = findViewById(R.id.button_flash);
         mToggleButton.setOnClickListener(createToggleFlashListener());
-        on = (Button) findViewById(R.id.on);
-        off = (Button) findViewById(R.id.off);
+        on = findViewById(R.id.on);
+        off = findViewById(R.id.off);
         on.setOnClickListener(view -> mScannerFragment.startScan());
         off.setOnClickListener(view -> mScannerFragment.stopScan());
     }

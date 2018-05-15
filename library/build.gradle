@@ -1,14 +1,15 @@
 apply plugin: 'android-library'
 
 repositories {
-  mavenCentral()
+    mavenCentral()
 }
 
 dependencies {
-  compile 'com.android.support:support-v4:19.0.0'
+    implementation 'com.android.support:support-v4:27.1.1'
 
-	compile files('libs/zxing-core-2.3.jar')
-	
+
+    compile files('libs/zxing-core-2.3.jar')
+
 }
 
 android {

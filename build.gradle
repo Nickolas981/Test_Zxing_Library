@@ -14,6 +14,15 @@ buildscript {
     }
 }
 
+allprojects {
+    repositories {
+        jcenter()
+        maven { url "https://jitpack.io" }
+        google()
+    }
+}
+
+
 task wrapper(type: Wrapper) {
     gradleVersion = '1.8'
 }
